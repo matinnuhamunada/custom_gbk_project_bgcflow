@@ -71,6 +71,30 @@ cd $BGCFLOW_DIR
 git checkout dev-0.8.0-1
 ```
 
+### Final structure
+The final structure should look like this:
+```bash
+.
+├── config
+│   ├── config.yaml
+│   └── frida
+│       ├── custom_taxonomy.tsv
+│       ├── input_files
+│       │   ├── NW_003318762.1_0_43680_changed_species.gbk
+│       │   ├── NW_003318762.1_0_43680_changed_species.txt
+│       │   ├── NW_003385442.1_0_46725_changed_species.gbk
+│       │   ├── NW_003385442.1_0_46725_changed_species.txt
+│       │   ├── NW_019110264.1_0_31676_changed_species.gbk
+│       │   ├── NW_019110264.1_0_31676_changed_species.txt
+│       │   ├── NZ_KE386655.1_0_25886_changed_species.gbk
+│       │   └── NZ_KE386655.1_0_25886_changed_species.txt
+│       ├── project_config.yaml
+│       └── samples.csv
+├── profile
+│   └── config.yaml
+...
+```
+
 ### (Optional) Running panoptes to monitor the workflow
 Use tmux and run `panoptes`
 ```bash
