@@ -7,16 +7,16 @@ Make sure to initiate the template `config.yaml` with `bgcflow init`
 
 ## Usage
 ### Running the notebooks
-1. Clone the repo
+#### 1. Clone the repo
 ```bash
 git clone https://github.com/matinnuhamunada/custom_gbk_project_bgcflow.git
 cd custom_gbk_project_bgcflow
 ```
-2. (Optional) Create conda environment
+#### 2. (Optional) Create conda environment
 ```bash
 mamba env create -f env.yaml
 ```
-3. (Optional) Run the notebooks
+#### 3. (Optional) Run the notebooks
 The notebook will prepare custom genbanks file required for BGCFlow
 ```
 mamba activate bgc_analytics
@@ -24,7 +24,7 @@ jupyter execute notebooks/00_data_cleanup.ipynb
 jupyter execute notebooks/01_taxonomy.ipynb
 ```
 ### Synchronizing with BGCFlow
-1. Copying the project
+#### 1. Copying the project
 Copy the content of this folder inside BGCFlow's config directory:
 ```bash
 BGCFLOW_DIR="../bgcflow" #change accordingly
@@ -32,7 +32,7 @@ PROJECT_DIR="$BGCFLOW_DIR/config/frida"
 mkdir -p $PROJECT_DIR
 cp custom_taxonomy.tsv project_config.yaml samples.csv input_files $PROJECT_DIR -r
 ```
-2. Add the project PEP to BGCFlow global config file
+#### 2. Add the project PEP to BGCFlow global config file
 Open the global config file (`config/config.yaml`) and add the PEP file for this project:
 ```yaml
 # This file should contain everything to configure the workflow on a global scale.
@@ -51,7 +51,7 @@ projects:
 bgc_projects:
   - pep: config/lanthipeptide_lactobacillus/project_config.yaml
 ```
-3. Creating custom profiles
+#### 3. Creating custom profiles
 Profiles can be used to override Snakefile workflow parameter or resources according to machine availability. An example profile is located [here](profile/config.yaml).
 The content of the file looks like this:
 ```yaml
@@ -65,7 +65,7 @@ To copy the example to your bgcflow directory, do:
 ```bash
 cp profile $BGCFLOW_DIR -r
 ```
-4. Checkout to development branch
+#### 4. Checkout to development branch
 ```bash
 cd $BGCFLOW_DIR
 git checkout dev-0.8.0-1
@@ -114,8 +114,8 @@ snakemake \
   --rerun-incomplete \
   --rerun-triggers mtime \
   -c 64 \
-  --wms-monitor http://127.0.0.1:5000 \
   --profile profile \
+  --batch antismash=1/3 \
   --dryrun
 ```
 Remove the `--dryrun` flag to run the job.
