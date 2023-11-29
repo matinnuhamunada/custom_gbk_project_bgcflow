@@ -1,0 +1,5 @@
+genome_id,gtdb_release,Domain,Phylum,Class,Order,Family,Genus,Species,Organism,genome_id
+NW_003318762.1_0_43680,R214,d__Bacteria,p__Actinomycetota,c__Actinomycetia,o__Actinomycetales,f__Microbacteriaceae,g__Agromyces,sp.,s__Agromyces sp.,NW_003318762.1_0_43680
+NW_019110264.1_0_31676,R214,d__Bacteria,p__Pseudomonadota,c__Gammaproteobacteria,o__Nevskiales,f__Nevskiaceae,g__Stenotrophobium,sp.,s__Stenotrophobium sp.,NW_019110264.1_0_31676
+NW_003385442.1_0_46725,R214,d__Bacteria,p__Pseudomonadota,c__Gammaproteobacteria,o__Enterobacterales,f__Enterobacteriaceae,g__Pantoea,sp.,s__Pantoea sp.,NW_003385442.1_0_46725
+NZ_KE386655.1_0_25886,R214,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Flavobacteriales,f__Flavobacteriaceae,g__Aureibaculum,sp.,s__Aureibaculum sp.,NZ_KE386655.1_0_25886

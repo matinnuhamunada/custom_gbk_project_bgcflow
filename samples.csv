@@ -1,0 +1,5 @@
+genome_id,source,genus,species,organism,input_file
+NW_003318762.1_0_43680,custom,Agromyces,Agromyces tardus,Agromyces tardus,NW_003318762.1_0_43680_changed_species.gbk
+NW_019110264.1_0_31676,custom,Stenotrophobium,Stenotrophobium rhamnosiphilum,Stenotrophobium rhamnosiphilum,NW_019110264.1_0_31676_changed_species.gbk
+NW_003385442.1_0_46725,custom,Pantoea,Pantoea rodasii,Pantoea rodasii,NW_003385442.1_0_46725_changed_species.gbk
+NZ_KE386655.1_0_25886,custom,Aureibaculum,Aureibaculum luteum,Aureibaculum luteum,NZ_KE386655.1_0_25886_changed_species.gbk
