@@ -1,0 +1,3 @@
+set-threads:
+  antismash: 16
+  bigscape: 64
